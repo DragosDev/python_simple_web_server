@@ -24,7 +24,7 @@ if __name__ == "__main__":
 ```
 # How is working this code:
 
-We are importing the required modules:
+1. We are importing the required modules:
 
 <strong>http.server</strong> - with this module we are the classes to implement the web server to serve the static file such as HTML, CSS and JS or images etc.
 
@@ -49,3 +49,17 @@ httpd = socketserver.TCPServer(("", port), Handler) - with this line we are tell
 print(f"Serving on port {port}") - is printing a message for us together with the port number
 
 httpd.serve_forever() - this a parameter where we are telling to our server to run without stop until we are stopping it.
+
+
+# Adding authentication
+<strong>Description</strong>
+We are asking the user to input a simple username and password which is configured in our config.ini file.
+1. Create a new file called config.ini with our credentials variables.
+   
+```python
+[credentials]
+username = user
+password = pass
+```
+
+2. This file should be added to your .gitignore file so is not uploaded to your repository, in our case I will add it so you can see how it's working.
