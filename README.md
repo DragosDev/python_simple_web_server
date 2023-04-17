@@ -1,4 +1,4 @@
-# python_simple_web_server
+# Simple Web Server In Python
 A simple web server to access your files from a directory
 
 # What is doing this code:
